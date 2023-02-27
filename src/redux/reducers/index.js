@@ -18,7 +18,7 @@ const mainReducer = (state = initialState, action) => {
                 }
             }
         case "WEATHER" :
-            /* every time i try to upload the payload it renders two objects, in order to 
+            /* every time i try to upload the payload it renders two objects.... in order to 
             avoid this behavior i filtered the results in order to render only objects with different id*/ 
             const dataId = action.payload.id
             let weatherLocations = state.weather.weatherState.map(weatherObj => weatherObj.id)
